@@ -7,6 +7,6 @@ lazy val root = (project in file("."))
     name := "TestingLessons",
   )
 libraryDependencies ++= Seq(
-  "org.seleniumhq.selenium" % "selenium-java" % "4.31.0"
+  "org.seleniumhq.selenium" % "selenium-java" % "4.33.0"
 )
 
