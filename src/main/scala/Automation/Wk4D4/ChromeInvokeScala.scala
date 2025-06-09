@@ -2,6 +2,7 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 
 object ChromeInvokeScala extends App {
+  //FIRST WEB DRIVER SCRIPT WHICH WILL INVOKE THE CHROME BROWSER
 
   println("Invoking Chrome Browser!")
 
