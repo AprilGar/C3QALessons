@@ -20,9 +20,9 @@ object ByID extends App {
   println("Password entered")
 
   //Not working currently - don't know enough yet. (Might need to wait.)
-//  val login: WebElement = driver.findElement(By.id("login")) //find submit button through id
-//  login.click() //click the button
-//  println("Login successful")
+  val login: WebElement = driver.findElement(By.id("login")) //find submit button through id
+  login.click() //click the button
+  println("Login successful")
 
   driver.quit()
 }
