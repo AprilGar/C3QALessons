@@ -54,10 +54,10 @@ object LoopsPractice extends App {
   }
 
   //TABLES
-  <table>
-      <td>Apple</td> <td>Red</td>
-      <td>Banana</td> <td>Yellow</td>
-  </table>
+//  <table>
+//      <td>Apple</td> <td>Red</td>
+//      <td>Banana</td> <td>Yellow</td>
+//  </table>
 
   //loop through table rows
   val rows = driver.findElements(By.cssSelector("table tr")) //Selenium's findElements finds all <tr> elements inside any <table> on the page.
@@ -103,6 +103,5 @@ object LoopsPractice extends App {
     cells.exists(_.getText == "Banana")
   }
   println(s"'Banana' appears in $bananaCount rows")
-
 
 }
