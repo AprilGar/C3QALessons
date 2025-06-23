@@ -27,7 +27,7 @@ object HandlingWindows extends App {
 
   while (iterator.hasNext) { //while the iterator has a 'next' place to go
     val handle = iterator.next() //check 1 by 1
-    if (handle != parentWindowHandle) { //switch to window if it isn't the parent window
+    if (handle != parentWindowHandle) { //switch to window if it isn't the parent window, will skip the first one (as it is the parent) and go back to 'while' again. Moves to second window and trys again.
       driver.switchTo().window(handle)
       println("Title of page: " + driver.getTitle)
       driver.close()
